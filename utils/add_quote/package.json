@@ -1,0 +1,20 @@
+{
+  "name": "addQuote",
+  "description": "Adds a quote to the Firestore database",
+  "version": "0.0.1",
+  "private": true,
+  "license": "Apache Version 2.0",
+  "author": "Pedlar Studios, LLC",
+  "engines": {
+    "node": "8"
+  },
+  "scripts": {
+    "start": "firebase serve --only functions:addQuote",
+    "deploy": "firebase deploy --only functions:addQuote"
+  },
+  "dependencies": {    
+    "firebase-admin": "^5.13.1",
+    "firebase-functions": "^2.0.2",    
+    "@google-cloud/firestore": "^3.4.1"
+  }
+}
